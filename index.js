@@ -7,7 +7,7 @@ const args = process.argv;
 const port = process.env.PORT || args[2] || 3000;
 const app = express();
 
-const mongourl = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.cesng.mongodb.net/ChatTQW?retryWrites=true&w=majority&appName=Cluster0`;
+const mongourl = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_DB_PASSWORD}@cluster0.iw8z5.mongodb.net/ChatTQW?retryWrites=true&w=majority&appName=Cluster0`;
 mongoose.connect(mongourl)
     .then(() => console.log("connected"))
     .catch(error => console.log("did not connect: " + error));
